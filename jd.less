@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  //头部
+  header {
+    background: #999;
+    display: flex;
+    padding: 8px 260px;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 10px;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        padding: 0 10px;
+        border-right: solid 1px #666;
+      }
+      li:first-child {
+        color: #f10215;
+      }
+      li:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  //内容区域
+  main {
+    flex: 1;
+    background: white;
+    padding: 20px 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img,
+    a {
+      width: 190px;
+      height: 120px;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      height: 120px;
+      justify-content: space-between;
+      flex-direction: column;
+      .search {
+        height: 20px;
+        padding: 0 80px;
+        font-size: 10px;
+
+        .row {
+          display: flex;
+          justify-content: space-between;
+          &-left {
+            display: flex;
+
+            .search-container {
+              position: relative;
+
+              input {
+                line-height: 28px;
+                border: solid 2px #f10215;
+                outline-style: none;
+                padding: 2px 44px 2px 17px;
+                width: 460px;
+                background: transparent;
+                box-sizing: border-box;
+              }
+              span {
+                position: absolute;
+                top: 10px;
+                left: 18px;
+                color: #999;
+                content: "过年大礼包";
+              }
+              input:focus + span:after {
+                content: "";
+              }
+            }
+            .btn {
+              background: #f10215;
+              border: none;
+              color: white;
+              font-size: 12px;
+              width: 80px;
+              height: 36px;
+            }
+          }
+
+          .shopping-car {
+            box-shadow: 0 0 2px #eee;
+            border: solid 1px #eee;
+            width: 100px;
+            height: 36px;
+            background-color: #fff;
+            text-align: center;
+            line-height: 34px;
+            color: #f10215;
+            position: relative;
+
+            .car {
+              position: absolute;
+              top: -2px;
+              right: 6px;
+              width: 20px;
+              height: 16px;
+              background: #f10215;
+              color: white;
+              line-height: 1.5em;
+              clip-path: ellipse(46% 42% at 50% 50%);
+            }
+          }
+        }
+
+        ul {
+          margin-top: 10px;
+          list-style: none;
+          display: flex;
+          color: #999;
+
+          li {
+            margin-right: 10px;
+
+            &:first-child {
+              color: #f10215;
+            }
+          }
+        }
+      }
+      .type {
+        height: 20px;
+        list-style: none;
+        padding: 0 20px;
+        display: flex;
+        color: #333;
+        font-size: 15px;
+
+        li {
+          margin: 0 10px;
+
+          &:nth-child(-n + 2) {
+            color: #f10215;
+          }
+        }
+      }
+    }
+
+    a {
+      background-image: url("assets/1.webp");
+      background-size: cover;
+    }
+  }
+  //底部
+  footer {
+    height: 100px;
+    background: green;
+  }
+}

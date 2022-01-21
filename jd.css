@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+body header {
+  background: #999;
+  display: flex;
+  padding: 8px 260px;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  font-size: 10px;
+}
+body header ul {
+  display: flex;
+  list-style: none;
+}
+body header ul li {
+  padding: 0 10px;
+  border-right: solid 1px #666;
+}
+body header ul li:first-child {
+  color: #f10215;
+}
+body header ul li:last-child {
+  border-right: none;
+}
+body main {
+  flex: 1;
+  background: white;
+  padding: 20px 260px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main img,
+body main a {
+  width: 190px;
+  height: 120px;
+}
+body main .container {
+  flex: 1;
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body main .container .search {
+  height: 20px;
+  padding: 0 80px;
+  font-size: 10px;
+}
+body main .container .search .row {
+  display: flex;
+  justify-content: space-between;
+}
+body main .container .search .row-left {
+  display: flex;
+}
+body main .container .search .row-left .search-container {
+  position: relative;
+}
+body main .container .search .row-left .search-container input {
+  line-height: 28px;
+  border: solid 2px #f10215;
+  outline-style: none;
+  padding: 2px 44px 2px 17px;
+  width: 460px;
+  background: transparent;
+  box-sizing: border-box;
+}
+body main .container .search .row-left .search-container span {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  color: #999;
+  content: "过年大礼包";
+}
+body main .container .search .row-left .search-container input:focus + span:after {
+  content: "";
+}
+body main .container .search .row-left .btn {
+  background: #f10215;
+  border: none;
+  color: white;
+  font-size: 12px;
+  width: 80px;
+  height: 36px;
+}
+body main .container .search .row .shopping-car {
+  box-shadow: 0 0 2px #eee;
+  border: solid 1px #eee;
+  width: 100px;
+  height: 36px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 34px;
+  color: #f10215;
+  position: relative;
+}
+body main .container .search .row .shopping-car .car {
+  position: absolute;
+  top: -2px;
+  right: 6px;
+  width: 20px;
+  height: 16px;
+  background: #f10215;
+  color: white;
+  line-height: 1.5em;
+  clip-path: ellipse(46% 42% at 50% 50%);
+}
+body main .container .search ul {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  color: #999;
+}
+body main .container .search ul li {
+  margin-right: 10px;
+}
+body main .container .search ul li:first-child {
+  color: #f10215;
+}
+body main .container .type {
+  height: 20px;
+  list-style: none;
+  padding: 0 20px;
+  display: flex;
+  color: #333;
+  font-size: 15px;
+}
+body main .container .type li {
+  margin: 0 10px;
+}
+body main .container .type li:nth-child(-n + 2) {
+  color: #f10215;
+}
+body main a {
+  background-image: url("assets/1.webp");
+  background-size: cover;
+}
+body footer {
+  height: 100px;
+  background: green;
+}

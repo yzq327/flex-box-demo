@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  padding: 8px 340px;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  font-size: 10px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul li {
+  padding: 0 10px;
+  border-right: solid 1px #666;
+}
+header ul li:first-child {
+  color: #f10215;
+}
+header ul li:last-child {
+  border-right: none;
+}
